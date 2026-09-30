@@ -1,0 +1,32 @@
+When generating a Git commit message, follow Conventional Commits. Output only the message.
+
+Format:
+<type>(<scope>): <subject>
+
+Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert.
+Scope is optional. Use a short area when one is obvious (web, domain, server). Omit it when the change spans the repo.
+
+Subject rules:
+- Imperative present tense: "add", "fix", "remove". Never "added" or "adds".
+- Lowercase. No trailing period.
+- One line, about 50 characters, never over 72.
+- Say what changed and why it matters. Do not list files or restate the diff.
+
+Body:
+- Default to the subject line only.
+- Add a body only when the reason is not obvious from the subject.
+- Separate it with one blank line. Wrap near 72 characters.
+- Explain why, not a line-by-line changelog.
+
+Breaking changes: put ! after the type or scope, and add a footer line `BREAKING CHANGE: <what broke>`.
+If the diff clearly closes an issue, add a footer `Fixes #123`. Never invent an issue number.
+
+Good:
+feat(web): add household invitation flow
+fix(domain): keep split totals exact in cents
+docs: describe package dependency boundaries
+
+Bad:
+Added a new feature for invitations.
+Update files
+feat: Added household invitations.

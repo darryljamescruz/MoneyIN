@@ -1,0 +1,8 @@
+:root{
+--shadow-none:none;--shadow-pop:0 16px 48px rgba(0,0,0,.6);--shadow-drawer:-24px 0 64px rgba(0,0,0,.7);
+--border-hairline:1px solid var(--border-subtle);/* @kind other */--border-control:1px solid var(--border-default);/* @kind other */
+--blur-header:saturate(1.4) blur(16px);/* @kind other */
+--ease-out:cubic-bezier(.2,.8,.2,1);/* @kind other */--ease-in-out:cubic-bezier(.65,0,.35,1);/* @kind other */
+--dur-fast:120ms;/* @kind other */--dur-base:200ms;/* @kind other */--dur-slow:400ms;/* @kind other */
+--img-scrim:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.85) 100%);/* @kind other */
+}
